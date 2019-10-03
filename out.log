@@ -1,0 +1,2471 @@
+2019-10-01 11:38:18,852 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 11:38:49,365 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 11:38:49,366 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:38:49,422 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:38:49,423 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:40:11,671 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 11:40:48,164 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 11:40:48,165 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:40:48,185 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:40:48,185 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:41:26,732 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:41:26,752 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:41:26,753 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:43:02,455 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 11:43:12,528 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:43:12,547 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:43:12,547 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:43:19,621 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 11:43:19,622 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:43:19,645 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:43:19,645 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:44:19,675 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 11:48:37,929 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 11:49:17,332 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 11:49:17,333 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:49:17,359 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:49:17,360 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:49:25,579 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:49:25,597 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:49:25,598 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:50:25,634 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 11:51:38,931 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 11:52:00,996 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:52:01,057 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:52:01,058 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:52:26,188 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 11:52:26,189 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:52:26,215 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:52:26,216 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:12,550 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:12,598 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:55:12,599 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:31,894 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:31,913 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:55:31,915 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:55,151 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:55:55,207 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:55:55,207 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:59:29,652 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:59:29,702 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 11:59:29,704 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:59:38,994 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 11:59:47,958 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 11:59:47,959 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 12:04:04,055 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 12:06:28,885 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 12:06:51,879 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 12:25:48,082 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 12:25:55,511 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 12:26:09,071 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:31:19,093 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 14:31:34,293 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/domain'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /domain not found
+2019-10-01 14:31:34,294 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:31:34,349 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:31:34,350 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:31:48,488 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/domain'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /domain not found
+2019-10-01 14:31:48,490 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:32:21,480 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:32:21,500 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:32:21,502 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:32:40,694 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/text'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/text not found
+2019-10-01 14:32:40,695 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:33:02,729 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/text'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/text not found
+2019-10-01 14:33:02,731 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:33:16,719 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:33:16,741 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:33:16,741 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:33:39,310 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 14:33:39,311 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:33:57,498 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /model/parse not found
+2019-10-01 14:33:57,501 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:34:16,730 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 14:34:52,767 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 14:34:58,632 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:34:58,696 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:34:58,697 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:35:09,813 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /model/parse not found
+2019-10-01 14:35:09,813 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:35:33,738 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/status'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /status not found
+2019-10-01 14:35:33,739 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:35:33,760 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:35:33,761 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:36:01,885 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 14:36:10,134 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:36:10,155 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 14:36:10,156 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:36:29,857 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:37:10,149 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 14:38:16,593 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 14:59:34,899 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 15:01:47,810 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/chat'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /chat not found
+2019-10-01 15:01:47,810 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:02:40,112 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:02:40,171 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:02:40,172 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:02:46,924 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/chat'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /chat not found
+2019-10-01 15:02:46,924 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:02:46,943 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:02:46,944 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:03:08,530 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2019-10-01 15:03:08,531 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:03:08,557 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:03:08,559 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:04:08,560 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 15:12:36,871 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 15:13:36,911 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 15:17:26,924 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:17:26,982 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:17:26,982 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:17:47,765 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 15:17:47,766 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:18:08,499 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 15:18:52,673 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 15:18:52,674 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:19:23,350 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 15:19:42,534 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:19:42,596 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:19:42,597 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:19:47,488 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/parse not found
+2019-10-01 15:19:47,489 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:20:18,321 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:20:42,543 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 15:22:51,986 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:37:20,304 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 15:37:29,464 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:41:38,638 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:41:38,684 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 15:41:38,685 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 15:42:38,694 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 16:05:17,310 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:11:26,091 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 16:11:54,264 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:15:36,717 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:23:13,684 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:37:03,337 [ERROR]  Exception occurred while handling uri: 'http://192.168.1.45:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 16:37:03,338 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:37:40,089 [ERROR]  Exception occurred while handling uri: 'http://192.168.1.45:5005/model/parse?text=hello'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 16:37:40,090 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:38:16,851 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:48:37,331 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 16:54:39,977 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-01 16:54:45,839 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:01:54,553 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:03:19,303 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:04:17,394 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model/parse'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model/parse
+2019-10-01 17:04:17,394 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:04:17,456 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-01 17:04:17,456 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:05:17,420 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-10-01 17:09:36,424 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:10:13,018 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:10:53,721 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:16:06,446 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:17:05,356 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:18:41,327 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:23:35,779 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:41:05,992 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:43:27,734 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-01 17:47:55,352 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic/app.py", line 958, in handle_request
+    request, response
+  File "/home/govind/.local/lib/python3.6/site-packages/spf/framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "/home/govind/.local/lib/python3.6/site-packages/sanic_cors/core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
